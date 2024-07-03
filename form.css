@@ -1,0 +1,49 @@
+h1{
+    margin-left: 35%;
+}
+
+.nombre, .apellido, .email, .tel, .asunto, .usuario, .contrasenia{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 150%;
+    margin-bottom: 1%;
+    margin-left: 15%;
+}
+
+input, textarea{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+form button{
+    margin-top: 5%;
+    margin-left: 40%;
+    background-color: #326254;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+.loggin_titulo{
+    margin-left: 15%;
+    font-size: 50px;
+}
+
+button{
+    color: #ffff;
+}
+
+.boton_loggin{
+    margin-left: 37%;
+}
+

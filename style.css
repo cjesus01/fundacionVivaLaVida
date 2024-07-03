@@ -1,0 +1,402 @@
+body{
+    background-color: #EAFFF6;
+    margin: 0%;
+}
+
+nav{
+    background-color: #54BFA1;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 5%;
+    height: 4%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  margin-left: 53%; 
+}
+
+li{
+    list-style: none;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1{
+    margin-left: 5%;
+    font-family: 'merriweather';
+    font-size: 250%;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.formas_ayudar p{
+    font-size: 20px;
+    font-family: 'Roboto';
+    text-align: left;
+    padding-right: 10%;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    margin-right: 0%;
+}
+
+.imagen_inicio{
+    width: 30%;
+    margin: 3%;
+    margin-top: -5%;
+}
+
+h2{
+    margin-left: 5%;
+    font-family: 'Merriweather';
+    font-size: 200%;
+}
+
+.formas_ayudar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+h3{
+    margin-left: 4%;
+    font-size: 150%;
+    font-family: 'Merriweather';
+}
+
+.donar_inicio p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 120%;
+}
+
+.donar_inicio button{
+    margin-left: 10%;
+    margin-top: 9%;
+    background-color: #326254;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+.voluntario_inicio p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 120%;
+}
+
+.voluntario_inicio button{
+    margin-left: 10%;
+    margin-top: 12%;
+    background-color: #326254;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+.hogar_inicio p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 120%;
+}
+
+.hogar_inicio button{
+    margin-left: 10%;
+    margin-top: 6%;
+    background-color: #326254;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+.padrino_inicio p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 120%;
+}
+
+.padrino_inicio button{
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #326254;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #54BFA1;
+    margin-top: 2%;
+}
+
+.face, .insta{
+    width: 2%;
+    height: 2%;
+    margin-right: 1%;
+    margin-top: 0.5%;
+}
+
+.face{
+    margin-left: 50%;
+}
+
+footer a{
+    margin-top: 1%;
+}
+
+footer p{
+    margin-top: 1%;
+    margin-left: 2%;
+    color: #FFFFFF;
+}
+
+/*donacion*/
+.titulo_donacion{
+    margin-left: 5%;
+    font-family: 'merriweather';
+    font-size: 250%;
+}
+ 
+.texto_donacion{
+ display: flex;
+ flex-direction: row;   
+}
+
+.texto_donacion p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 120%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.perro_donacion{
+   margin-right: 3%;
+   margin-top: -4%;
+   height: 450px;
+   width: 350px;
+}
+
+.ayudanos{
+    display: flex;
+    flex-direction: column;
+}
+
+.acomodar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    padding-right: 0%;
+}
+
+.ayudanos h2{
+    font-size: 200%;
+    font-family: 'Merriweather';
+    margin-left: 5%;
+}
+
+.banco h3{
+    margin-left: 1%;
+    font-size: 150%;
+    font-family: 'Merriweather';
+}
+
+.banco{
+    width: 35%;
+    margin-left: 3%;
+}
+
+.banco p, .mercado p{
+    font-size: 20px;
+    margin-left: 6%;
+}
+
+ /*Adopciones*/
+section .chiqui, section .milton, section .luna, section .clarita, section .freddy, section .fido,
+section .ginger, section .malbec, section .marley, section .melba, section .muma, section .nala, section .negro,
+section .rocky, section .tina{
+   display: flex;
+   flex-direction: row;
+   margin-left: 5%;
+   margin-bottom: 2%;
+}
+
+.perros_adopciones h2, .perros_adopciones p, .perros_adopciones button{
+    margin-left: 3%;
+}
+
+.nombre_descripcion{
+    background-color: #EFF2F1;
+    width: 90%;
+    height: 65%;
+    margin: -1% 4% 1% 4%;
+    padding:0% 2% 1% 0%;
+    border-radius: 10px;
+}
+
+.melba .nombre_descripcion{
+    width: 107%;
+}
+
+.nala .nombre_descripcion{
+    width: 123%;
+    margin-left: 5%;
+}
+
+.rocky .nombre_descripcion{
+    margin-left: 3%;
+    margin-top: 1%;
+    height: 150px;
+    width: 100%;
+}
+
+
+.perros_adopciones p{
+    font-size: 20px;
+    font-family: 'roboto';
+    margin-top: -1%;
+}
+
+.chiqui img{
+    height: 190px;
+    width: 36%;
+}
+
+.luna img{
+    height: 220px;
+    width: 26.5%;
+}
+
+.clarita img{
+    height: 213px;
+    width: 23%;
+}
+
+.freddy img{
+    height: 186px;
+    width: 22%;
+}
+.fido img{
+    height: 250px;
+    width: 25.5%;
+}
+
+.ginger img{
+    height: 250px;
+    width: 17.5%;
+}
+
+.malbec img{
+    height: 230px;
+    width: 17.5%;
+} 
+
+.marley img{
+    height: 250px;
+    width: 18%;
+}
+
+.melba img{
+    height: 250px;
+    width: 17.5%;
+}
+
+.muma img{
+    height: 220px;
+    width: 22.5%;
+}
+
+.nala img{
+    height: 220px;
+    width: 17.5%;
+}
+
+.negro img{
+    height: 220px;
+    width: 24%;
+}
+
+.rocky img{
+    width: 24%;
+}
+
+.tina img{
+    width: 17.5%;
+}
+
+.chiqui button, .milton button, .luna button, .clarita button, .freddy button, .fido button, .ginger button, .malbec button,
+.marley button, .muma button, .melba button, .nala button, .negro button, .rocky button, .tina button{
+    margin-left: 10%;
+    background-color: #326254;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+.melba button{
+    margin-left: 12%;
+    padding-left: 11.7%;
+    padding-right: 11.7%;
+}
+
+.nala button{
+    margin-left: 13.7%;
+    padding-left: 12.5%;
+    padding-right: 15%;
+}
+
+.nala button a{
+    margin-left: 22%;
+}
+
+.rocky button{
+    margin-top: 2%;
+    margin-left: 6.1%;
+    padding-right: 12.4%;
+}
+
+.rocky button a{
+    margin-left: 22%;
+}
+
+.tina button{
+    margin-left: 12.9%;
+    padding-right: 16.5%;
+}
+
+.tina button a{
+    margin-left: 45%;
+}
