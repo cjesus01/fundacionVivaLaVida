@@ -28,7 +28,7 @@ article{
     height: 0px;
     position: absolute;
     left: 48%;
-    top: 6%;
+    top: 7%;
 }
 .ocultarElem{
     display: none;
@@ -38,6 +38,7 @@ article{
     right: -10%;
     background-color: #EAFFF6;
     border: none;
+    top: 15%;
 }
 
 ul li{
@@ -192,6 +193,7 @@ section .rocky, section .tina{
     padding-top: 3%;
     padding-left: 3%;
 }
+
 .nombre_descripcion{
     background-color: #EFF2F1;
     width: 90%;
@@ -213,20 +215,36 @@ section .rocky, section .tina{
     padding: 7px 10%;
     border-radius: 5px 5px 5px 5px;
     border: none;
+    color: white;
 }
-@media(width<=450px){
+@media(width<=350px){
     .contenedorMenuLista{
-        left: 50%;
+        left: 43%;
+        top: 5%;
     }
 }
-@media(width<=400px){
+@media(width>=390px){
     .contenedorMenuLista{
-        left: 45%;
+        left: 52%;
+        top: 6%;
     }
 }
 @media(width>=450px){
     .contenedorMenuLista{
-        left: 62%;
+        left: 56%;
+        top: 8%;
+    }
+}
+@media(width>=510px){
+    .contenedorMenuLista{
+        left: 63%;
+        top: 8%;
+    }
+}
+@media(width>=600px){
+    .contenedorMenuLista{
+        left: 68%;
+        top: 8%;
     }
 }
 @media(width>=700px){
@@ -238,6 +256,7 @@ section .rocky, section .tina{
     }
     .contenedorMenuLista{
         left: 72%;
+        top: 6%;
     }
     .negro img{
         width: 25%;

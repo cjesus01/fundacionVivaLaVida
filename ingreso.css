@@ -20,12 +20,7 @@ form{
     margin-bottom: 1%;
     font-size: 15px;
 }
-.valorInvalido{
-    border: 1px solid red;
-}
-.valorValido{
-    border: 1px solid green;
-}
+
 .envio{
     display: flex;
     flex-direction: column;

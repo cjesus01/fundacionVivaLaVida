@@ -1,4 +1,4 @@
-let botonesAyudar=document.querySelectorAll(".formas_ayudar_boton");
+let botonesAyudar=document.querySelectorAll(".redireccion_botones");
 asignarEvento();
 const usuario = localStorage.getItem('usuario');
 

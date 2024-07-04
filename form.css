@@ -16,7 +16,34 @@ form{
     flex-direction: column;
     margin-bottom: 6%;
 }
+.valorInvalido{
+    border: 1px solid red;
+}
 
+.valorValido{
+    border: 1px solid green;
+}
+.parrafoAvisoConsulta{
+    font-size: 22px;
+    margin: 10% 0 0 5%;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-width: 2px;
+}
+#textoNombre, #textoApellido, #textoEmail, #textoTelefono, #textoAsunto{
+    margin: 0;
+    width: 90%;
+    margin-left: 18%;
+    margin-bottom: 1%;
+    font-size: 15px;
+}
+small{
+    margin: 0;
+    width: 90%;
+    margin-left: 18%;
+    margin-bottom: 1%;
+}
 label{
     font-size: 130%;
     margin-bottom: 1.5%;
