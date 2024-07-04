@@ -22,23 +22,27 @@
                 <li><a href="donaciones.html">Donación</a></li>
                 <li><a href="adopcion.html">Adoptar</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="loggin.html">Ingresar</a></li>
+                <li class="Ingresar"><a href="ingresar.html">Ingresar</a></li>
+                <li class="cerrarSesion noMostrar">Cerrar sesión</li>
             </ul>
         </div>
     </nav>  
+    <p id="textoAviso"></p>
     <div class = "ingreso">
         <h1>Ingresar</h1>
         <form method="get">
             <div class = "ingresar_usuario">
                 <label for = "ingresar_usuario">Usuario</label>
+                <p id="textoUsuario"></p>
                 <input type = "text" name = "ingresar_usuario" id = "ingresar_usuario" placeholder = "Ingrese su usuario">
             </div>
             <div class = "ingresar_contrasenia">
                 <label for = "ingresar_contrasenia">Contraseña</label>
+                <p id="textoContrasena"></p>
                 <input type = "password" name = "ingresar_contrasenia" id = "ingresar_contrasenia" placeholder = "Ingresa su contraseña">
             </div>
             <div class = "envio">
-                <button type = "submit">Ingresar</button>
+                <button type = "button" id="botonIngresar">Ingresar</button>
                 <a href = "loggin.html"> Crear Cuenta</a>
             </div>
         </form>
@@ -51,5 +55,6 @@
         <a href = "https://www.instagram.com/fundacionvivalavida.argentina/" class="linkInstagramFooter">@fundacionvivalavida.argentina</a>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/ingresar.js"></script>
 </body>
 </html>

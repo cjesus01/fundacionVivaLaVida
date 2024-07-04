@@ -1,7 +1,7 @@
 
-  main{
-    min-height: 100vh;
-  }
+main{
+min-height: 100vh;
+}
 form{
     min-height: auto;
 }
@@ -9,7 +9,23 @@ form{
     margin: 3% 8% 4.5%;
     border: 2px solid #54BFA1;
 }
-
+#textoAviso{
+    font-size: 22px;
+    margin: 10% 0 0 5%;
+}
+#textoUsuario, #textoContrasena{
+    margin: 0;
+    width: 90%;
+    margin-left: 18%;
+    margin-bottom: 1%;
+    font-size: 15px;
+}
+.valorInvalido{
+    border: 1px solid red;
+}
+.valorValido{
+    border: 1px solid green;
+}
 .envio{
     display: flex;
     flex-direction: column;
@@ -31,7 +47,7 @@ form{
 }
 
 .ingresar_contrasenia{
-    margin-top: 3%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
