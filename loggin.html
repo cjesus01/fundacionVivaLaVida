@@ -8,16 +8,23 @@
     <title>Fundacion Viva La Vida - Loggin</title>
 </head>
 <body>
+    <main>
     <nav>
         <img src = "Imagenes/Logo fundacion.jpeg" class = "logo" alt = "Logo de la institucion"> 
-        <ul>
-            <li><a href = "index.html">¿Quienes somos?</a></li>
-            <li><a href = "donaciones.html">Donacion</a></li>
-            <li><a href = "adopcion.html">Adopcion</a></li>
-            <li><a href = "contacto.html">Contacto</a></li>
-            <li><a href = "ingresar.html">Ingresar</a></li>
-        </ul>
-    </nav> 
+        <div class="contenedorMenuBotones">
+            <button class="botonAbrirMenu"><img src="Imagenes/menuLogos.png" alt="menu"></button>
+            <button class="botonCerrarMenu ocultarElem"><img src="Imagenes/menuLogosX.png" alt=""></button>
+        </div>
+        <div class="contenedorMenuLista">
+            <ul>
+                <li><a href="index.html">¿Quienes somos?</a></li>
+                <li><a href="donaciones.html">Donación</a></li>
+                <li><a href="adopcion.html">Adoptar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="loggin.html">Ingresar</a></li>
+            </ul>
+        </div>
+    </nav>  
     <h1 class = "loggin_titulo">Registrarse</h1>
     <form method = "post">
         <div class = "usuario">
@@ -36,13 +43,17 @@
             <label for = "telefono">Telefono</label>
             <input type = "number" name = "telefono" id = "telefono" placeholder = "Ingresa tu telefono">
         </div>
-        <button type = "submit" class = "boton_loggin">Crear cuenta</button>
+        <div class="botonForm">
+            <button type = "submit" class = "boton_loggin">Crear cuenta</button>
+        </div>
     </form>
-    <footer>
-        <p>&copy; 2016 Fundación Viva la Vida por el Bienestar Animal</p>
-        <img src = "Imagenes/Logo facebook.jpeg" alt = "Logo de Facebook" class = "face">
+</main>
+    <footer class = "inicio_footer">
+        <p class = "copi">&copy; 2016 Fundación Viva la Vida por el Bienestar Animal</p>
+       <img src = "Imagenes/Logo facebook.jpeg" alt = "Logo de Facebook" class = "face">
         <img src = "Imagenes/Logo Instagram.jpeg" alt = "Logo de Instragram" class = "insta">
-        <a href = "">@fundacionvivalavida.argentina</a>
+        <a href = "https://www.instagram.com/fundacionvivalavida.argentina/" class="linkInstagramFooter">@fundacionvivalavida.argentina</a>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>

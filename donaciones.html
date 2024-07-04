@@ -9,14 +9,20 @@
 <body>
     <nav>
         <img src = "Imagenes/Logo fundacion.jpeg" class = "logo" alt = "Logo de la institucion"> 
-        <ul>
-            <li><a href = "index.html">¿Quienes somos?</a></li>
-            <li><a href = "donaciones.html">Donacion</a></li>
-            <li><a href = "adopcion.html">Adopcion</a></li>
-            <li><a href = "contacto.html">Contacto</a></li>
-            <li><a href = "ingresar.html">Ingresar</a></li>
-        </ul>
-    </nav> 
+        <div class="contenedorMenuBotones">
+            <button class="botonAbrirMenu"><img src="Imagenes/menuLogos.png" alt="menu"></button>
+            <button class="botonCerrarMenu ocultarElem"><img src="Imagenes/menuLogosX.png" alt=""></button>
+        </div>
+        <div class="contenedorMenuLista">
+            <ul>
+                <li><a href="index.html">¿Quienes somos?</a></li>
+                <li><a href="donaciones.html">Donación</a></li>
+                <li><a href="adopcion.html">Adoptar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="loggin.html">Ingresar</a></li>
+            </ul>
+        </div>
+    </nav>  
     <h1 class = "titulo_donacion">Tu donación nos ayuda a ayudar</h1>
     <article>
         <section class = "texto_donacion">
@@ -24,7 +30,10 @@
                 Son cuidados a diario por un equipo de personas que se ocupan de ellos los 365 días del año. Tienen calefacción, alimento premiun
                 y algunos comen dietas especiales que se prepara en nuestra cocina; muchos de ellos reciben medicación ya que varios resultan 
                 padecer epilépilepcia, otros necesitan suplementos para sus articulaciones por ser mas viejitos o reciben fisioterapia, y siempre
-                hay nuevos rescataditos que necesitan tratamientos con diferentes medicaciones, e incluso cirugías. Todo esto solo es posible con 
+                hay nuevos rescataditos que necesitan tratamientos con diferentes medicaciones, e incluso cirugías.
+            </p>
+            <p>
+                Todo esto solo es posible con 
                 las donaciones de nuestros colaboradores, ya que los costos de un lugar como el nuestro, que asegure el bienestar de todos los 
                 perritos que viven allí, es muy alto.
             </p>
@@ -49,11 +58,12 @@
             </div>
         </section>
     </article>
-    <footer>
-        <p>&copy; 2016 Fundación Viva la Vida por el Bienestar Animal</p>
-        <img src = "Imagenes/Logo facebook.jpeg" alt = "Logo de Facebook" class = "face">
+    <footer class = "inicio_footer">
+        <p class = "copi">&copy; 2016 Fundación Viva la Vida por el Bienestar Animal</p>
+       <img src = "Imagenes/Logo facebook.jpeg" alt = "Logo de Facebook" class = "face">
         <img src = "Imagenes/Logo Instagram.jpeg" alt = "Logo de Instragram" class = "insta">
-        <a href = "https://www.instagram.com/fundacionvivalavida.argentina/">@fundacionvivalavida.argentina</a>
+        <a href = "https://www.instagram.com/fundacionvivalavida.argentina/" class="linkInstagramFooter">@fundacionvivalavida.argentina</a>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
