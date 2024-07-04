@@ -98,7 +98,9 @@ p{
     margin-top: 0.5%;
     margin-right: 0%;
 }
-
+.parrafoNecesitaIngresar{
+    color: red;
+}
 .voluntario_inicio, .hogar_inicio, .padrino_inicio{
     margin: 13% 0%;
 }
@@ -217,6 +219,7 @@ section .rocky, section .tina{
     border: none;
     color: white;
 }
+
 @media(width<=350px){
     .contenedorMenuLista{
         left: 43%;

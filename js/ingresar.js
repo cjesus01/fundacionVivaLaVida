@@ -1,3 +1,4 @@
+
 const URL="https://668466d156e7503d1ae02f14.mockapi.io/api/usuarios";
 let nombreIngresado=document.getElementById("ingresar_usuario");
 let contrasenaIngresado=document.getElementById("ingresar_contrasenia");
@@ -6,13 +7,6 @@ let botonIngresar=document.getElementById("botonIngresar");
 let textoAviso=document.getElementById("textoAviso");
 let textoUsuario=document.getElementById("textoUsuario");
 let textoContrasena=document.querySelector("#textoContrasena");
-
-
-function mostrar(){
-    console.log("entra");
-    let textoAviso=document.getElementById("textoAviso");
-    textoAviso.innerHTML="Necesita registrarse para llevar realizar esa acción.";
-}
 
 botonIngresar.addEventListener("click", ()=>{
     textoAviso.innerHTML="";
@@ -39,7 +33,6 @@ async function obtenerPersona(nombre, contrasena){
         for(let persona of json){
             if(persona.nombre_usuario==nombre){
                 seEncontro=true;
-                debugger;
                 nombreIngresado.classList.add("valorValido");
                 if(persona.contrasena==contrasena){
                     contrasenaIngresado.classList.add("valorValido");

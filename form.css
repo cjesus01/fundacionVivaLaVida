@@ -23,9 +23,12 @@ form{
 .valorValido{
     border: 1px solid green;
 }
-.parrafoAvisoConsulta{
+.parrafoAvisoConsulta, .parrafoNecesitaIngresar{
     font-size: 22px;
     margin: 10% 0 0 5%;
+}
+.parrafoNecesitaIngresar{
+    color: red;
 }
 input:focus, textarea:focus{
     outline: none;
