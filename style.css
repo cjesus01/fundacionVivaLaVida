@@ -15,14 +15,13 @@ nav{
 }
 
 .logoRedes{
-    margin-top: 3%;
-    width: 20%;
-    text-align: center;
+    width: 10%;
+    padding-right: 6%;
+    text-align: end;
 }
 .face, .insta{
-    width: 40%;
+    width: 85%;
     height: auto;
-    margin-right: 5%;
 }
 
 article{
@@ -124,9 +123,11 @@ p{
 footer{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     background-color: #54BFA1;
     margin-top: 2%;
+    padding: 2% 0%;
 }
 .linkInstagramFooter{
     display: none;
@@ -162,8 +163,7 @@ a{
 
 
 footer p{
-    margin-top: 3%;
-    margin-left: 2%;
+    margin: 2% 0% 2% 2%;
     color: #FFFFFF;
 }
 
@@ -183,16 +183,16 @@ footer p{
 
 /*Adopcion*/
 .adopcion img{
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: auto;
 }
 section .chiqui, section .milton, section .luna, section .clarita, section .freddy, section .fido,
 section .ginger, section .malbec, section .marley, section .melba, section .muma, section .nala, section .negro,
 section .rocky, section .tina{
-   display: flex;
-   flex-direction: row;
-   margin-left: 5%;
-   margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }
 
 .perros_adopciones h2, .perros_adopciones p, .perros_adopciones button{ 
@@ -205,7 +205,6 @@ section .rocky, section .tina{
 
 .nombre_descripcion{
     background-color: #EFF2F1;
-    width: 90%;
     margin: -1% 4% 1% 4%;
     padding:0% 2% 1% 0%;
     border-radius: 10px;
@@ -213,13 +212,13 @@ section .rocky, section .tina{
 
 .perros_adopciones p{
     font-size: 17px;
-    margin-top: -1%;
+    padding: 0% 3% 2% 3%;
 }
 
 
 .adopcion button{
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
     background-color: #326254;
     padding: 7px 10%;
     border-radius: 5px 5px 5px 5px;
@@ -227,7 +226,19 @@ section .rocky, section .tina{
     color: white;
 }
 
+@media only screen and (width>=500px){
+    .face, .insta{
+        width: 80%;
+        height: auto;
+    }
+}
 
+@media only screen and (width>=500px){
+    .face, .insta{
+        width: 60%;
+        height: auto;
+    }
+}
 
 
 @media only screen and (width>=700px){
@@ -237,20 +248,13 @@ section .rocky, section .tina{
     .formas_ayudar button{
         padding: 10px 20%;
     }
-    .negro img{
-        width: 25%;
-    }
     .contenedorMenuLista{
         top: 5%;
     }
     footer{
-        align-items: center;
+        padding: 0%;
     }
-    .face, .insta {
-        width: 30%;
-        height: auto;
-        margin-bottom: 2%;
-    }
+
     h3{
         font-size: 24px;
     }
@@ -260,6 +264,14 @@ section .rocky, section .tina{
     h1{
         font-size: 250%;
         margin-left: 5%;
+    }
+    section .chiqui, section .milton, section .luna, section .clarita, section .freddy, section .fido,
+    section .ginger, section .malbec, section .marley, section .melba, section .muma, section .nala, section .negro,
+    section .rocky, section .tina{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+       margin-left: 5%;
+       margin-bottom: 9%;
     }
 
 }
@@ -433,42 +445,22 @@ section .rocky, section .tina{
     }
     
      /*Adopciones*/
-    section .chiqui, section .milton, section .luna, section .clarita, section .freddy, section .fido,
-    section .ginger, section .malbec, section .marley, section .melba, section .muma, section .nala, section .negro,
-    section .rocky, section .tina{
-       display: flex;
-       flex-direction: row;
-       margin-left: 5%;
-       margin-bottom: 2%;
-    }
-    
     .perros_adopciones h2, .perros_adopciones p, .perros_adopciones button{
         margin-left: 3%;
     }
     
     .nombre_descripcion{
         background-color: #EFF2F1;
-        width: 90%;
         height: 65%;
         margin: -1% 4% 1% 4%;
         padding:0% 2% 1% 0%;
         border-radius: 10px;
     }
     
-    .melba .nombre_descripcion{
-        width: 107%;
-    }
-    
-    .nala .nombre_descripcion{
-        width: 123%;
-        margin-left: 5%;
-    }
-    
     .rocky .nombre_descripcion{
         margin-left: 3%;
         margin-top: 1%;
         height: 150px;
-        width: 100%;
     }
     
     
@@ -476,74 +468,6 @@ section .rocky, section .tina{
         font-size: 20px;
         margin-top: -1%;
     }
-    
-    .chiqui img{
-        height: 190px;
-        width: 36%;
-    }
-    
-    .luna img{
-        height: 220px;
-        width: 26.5%;
-    }
-    
-    .clarita img{
-        height: 213px;
-        width: 23%;
-    }
-    
-    .freddy img{
-        height: 186px;
-        width: 22%;
-    }
-    .fido img{
-        height: 250px;
-        width: 25.5%;
-    }
-    
-    .ginger img{
-        height: 250px;
-        width: 17.5%;
-    }
-    
-    .malbec img{
-        height: 230px;
-        width: 17.5%;
-    } 
-    
-    .marley img{
-        height: 250px;
-        width: 18%;
-    }
-    
-    .melba img{
-        height: 250px;
-        width: 17.5%;
-    }
-    
-    .muma img{
-        height: 220px;
-        width: 22.5%;
-    }
-    
-    .nala img{
-        height: 220px;
-        width: 17.5%;
-    }
-    
-    .negro img{
-        height: 220px;
-        width: 24%;
-    }
-    
-    .rocky img{
-        width: 24%;
-    }
-    
-    .tina img{
-        width: 17.5%;
-    }
-    
     .chiqui button, .milton button, .luna button, .clarita button, .freddy button, .fido button, .ginger button, .malbec button,
     .marley button, .muma button, .melba button, .nala button, .negro button, .rocky button, .tina button{
         margin-left: 10%;

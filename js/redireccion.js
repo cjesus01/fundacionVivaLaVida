@@ -11,7 +11,7 @@ function asignarEvento(){
                 padre.removeChild(boton.nextSibling);
                 padre.insertBefore(p, boton.nextElementSibling);
                 p.classList.add("parrafoNecesitaIngresar");
-                p.style.marginTop="14px";
+                p.style.marginBottom="30px";
                 p.innerHTML="Necesita registrarse para llevar acabo esta acción.";
             }
             else if(usuario!=null){
