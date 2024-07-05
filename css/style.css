@@ -1,6 +1,3 @@
-
-
-
 body {
     background-color: #EAFFF6;
     overflow-x: hidden;
@@ -16,8 +13,7 @@ nav{
 
 .logoRedes{
     width: 10%;
-    padding-right: 6%;
-    text-align: end;
+    padding-right: 0%;
 }
 .face, .insta{
     width: 85%;
@@ -75,8 +71,12 @@ ul.show {
 ul.cerrar {
     max-height: 0px;
 }
-li:hover{
+a:hover{
     color: black;
+}
+
+button:hover{
+    background-color: #1B322B;
 }
 
 .logo{
@@ -169,17 +169,68 @@ footer p{
 
 /*Donación*/
 
+.titulo_donacion{
+    margin-left: 5%;
+    font-family: 'merriweather';
+    font-size: 150%;
+}
+ 
+.texto_donacion{
+ display: flex;
+ flex-direction: row;   
+}
+
+.texto_donacion p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 120%;
+    margin-right: 10%;
+    margin-left: 8%;
+}
+
 .perro_donacion{
-    width: 100%;
- }
-
-.banco, .mercado{
-    margin: 5% 0% 15%;
+   margin-right: 3%;
+   margin-top: -4%;
+   height: 450px;
+   width: 350px;
 }
+
+.ayudanos{
+    display: flex;
+    flex-direction: column;
+}
+
+.acomodar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    padding-right: 0%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.ayudanos h2{
+    font-size: 200%;
+    font-family: 'Merriweather';
+    margin-left: 4%;
+}
+
+.banco h3, .mercado h3{
+    margin-left: 4%;
+    font-size: 150%;
+    font-family: 'Merriweather';
+}
+
+.banco{
+    width: 35%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+
 .banco p, .mercado p{
-    margin:3%;
+    font-size: 20px;
+    margin-left: 6%;
 }
-
 
 /*Adopcion*/
 .adopcion img{
@@ -281,96 +332,145 @@ section .rocky, section .tina{
         background-color: #54BFA1;
         display: flex;
         flex-direction: row;
-    } 
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+
+
+    h1{
+        margin-top: 4%;
+    }
+
+    .titulo_adopcion{
+        margin-bottom: 4%;
+    }
+    
+    article{
+        padding: 0% 1%;
+    }
+
+    .contenedorMenuBotones{
+        display: none;
+    }
+
+    .contenedorMenuLista{
+        height: 100%;
+        width: 65%;
+        position: relative;
+    }
     
     ul{
       display: flex;
-      flex-direction: row;
-      margin-left: 53%; 
+      position: relative;
+      overflow: visible;
+      justify-content: space-evenly;
+      max-height: none;
     }
     
-    
+    ul li{
+        list-style: none;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    a{
+        white-space: nowrap;
+        font-size: 170%;
+    }
+
     .nosotros{
         display: flex;
         flex-direction: row;
         margin-left: 5%;
-        font-size: 20px;
+    }  
+
+    .logo{
+        width: 5%;
+        margin-bottom: 1%;
     }
     
-    .formas_ayudar p{
-        font-size: 120%;
+    .formas_ayudar p, p{
+        font-size: 18px;
         font-family: 'Roboto';
         text-align: left;
         padding-right: 10%;
         margin-top: 0.5%;
-        margin-left: 5%;
         margin-right: 0%;
+    }
+
+    .formas_ayudar .donar_inicio p{
+        padding-right: 0%;
     }
     
     .imagen_inicio{
-        width: 30%;
+        width: 350px;
+        height: 500px;
         margin: 3%;
         margin-top: -5%;
     }
     
     .formas_ayudar{
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 2% 5%;
+    }
+
+    h2{
+        font-size: 250%;
         margin-left: 5%;
-        margin-top: 1%;
     }
     
     h3{
-        margin-left: 4%;
+        margin-top: -2%;
+        margin-left: 0%;
         font-size: 150%;
+    }
+
+    .hogar_inicio h3{
+        margin-right: -1%; 
+    }
+
+    .donar_inicio, .voluntario_inicio, .hogar_inicio, .padrino_inicio{
+        display: grid;
+        grid-template-rows: 0fr 3fr 0fr;;
+        align-content: space-between;
+        margin: 0 0 0 5%;
     }
     
     .donar_inicio button{
-        margin-top: 9%;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        border-radius: 5px 5px 5px 5px;
+        margin-left: 5%;
+        margin-right: 15%;
+        background-color: #326254;
+        padding: 7px 20% 7px 20%;
+        border-radius: 5px;
         border: none;
     }
-    
-    
+        
     .voluntario_inicio button{
-        margin-left: 10%;
-        margin-top: 12%;
+        margin-left: 5%;
+        margin-right: 15%;
         background-color: #326254;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        border-radius: 5px 5px 5px 5px;
+        padding: 7px 20% 7px 20%;
+        border-radius: 5px;
         border: none;
     }
     
     .hogar_inicio button{
-        margin-left: 10%;
-        margin-top: 6%;
+        margin-left: 5%;
+        margin-right: 15%;
         background-color: #326254;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        border-radius: 5px 5px 5px 5px;
+        padding: 7px 20% 7px 20%;
+        border-radius: 5px;
         border: none;
     }
     
-
-    
     .padrino_inicio button{
-        margin-left: 10%;
-        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 15%;
         background-color: #326254;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        border-radius: 5px 5px 5px 5px;
+        padding: 7px 20% 7px 20%;
+        border-radius: 5px;
         border: none;
     }
     
@@ -378,36 +478,42 @@ section .rocky, section .tina{
         display: flex;
         flex-direction: row;
         background-color: #54BFA1;
-        margin-top: 2%;
+        margin-top: 0%;
     }
     
+    .logoRedes{
+        width: 5%;
+        padding-right: 6%;
+        text-align: end;
+    }
     
     
     /*donacion*/
     .titulo_donacion{
         margin-left: 5%;
+        margin-top: 4%;
         font-family: 'merriweather';
         font-size: 250%;
     }
      
     .texto_donacion{
      display: flex;
-     flex-direction: row;   
+     flex-direction: row;
+     margin-top: 2%;
     }
     
     .texto_donacion p{
         text-align: left;
         font-family: 'Roboto';
-        font-size: 120%;
+        font-size: 150%;
         margin-right: 10%;
         margin-left: 5%;
     }
     
     .perro_donacion{
        margin-right: 3%;
-       margin-top: -4%;
-       height: 450px;
-       width: 350px;
+       height: 550px;
+       width: auto;
     }
     
     .ayudanos{
@@ -451,7 +557,6 @@ section .rocky, section .tina{
     
     .nombre_descripcion{
         background-color: #EFF2F1;
-        height: 65%;
         margin: -1% 4% 1% 4%;
         padding:0% 2% 1% 0%;
         border-radius: 10px;
@@ -478,6 +583,10 @@ section .rocky, section .tina{
         padding-bottom: 7px;
         border-radius: 5px 5px 5px 5px;
         border: none;
+    }
+
+    .adopcion button{
+        font-size: 150%;
     }
     
     .melba button{
@@ -514,4 +623,8 @@ section .rocky, section .tina{
     .tina button a{
         margin-left: 45%;
     }
+    p.parrafoNecesitaIngresar{
+        font-size: 24px;
+        margin-left: 7%;
+    } 
 }

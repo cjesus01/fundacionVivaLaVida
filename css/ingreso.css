@@ -24,6 +24,7 @@ form{
 .envio{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .ingreso h1{
@@ -55,17 +56,15 @@ form{
 }
 
 .envio button{
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 3%;
+    width: 30%;
 }
 
-@media(width<=450px){
+@media only screen and(width<=450px){
     .ingreso{
         margin: 13% 8% 4.5%;
     }
 }
-@media(width>=700px){
+@media only screen and (width >= 700px){
     .ingreso{
         margin: 3% 13% 4.5%;
     }
@@ -92,11 +91,23 @@ form{
 
 }
 
-@media(width>=800px){
+@media only screen and (width >=800px){
     .ingreso{
         margin: 3% 25% 4.5%;
     }
 
+    #textoAviso{
+        font-size: px;
+        margin: 4% 13% 2% 10%;
+    }
+
+    .envio a, .envio button{
+        font-size: 150%;
+    }
+
+    .ingresar_usuario, .ingresar_contrasenia{
+        margin-left: 15%;
+    }
 }
 
 
