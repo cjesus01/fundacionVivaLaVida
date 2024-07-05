@@ -55,9 +55,6 @@ form{
     margin-bottom: 5%;
 }
 
-.envio button{
-    width: 30%;
-}
 
 @media only screen and(width<=450px){
     .ingreso{
@@ -106,7 +103,7 @@ form{
     }
 
     .ingresar_usuario, .ingresar_contrasenia{
-        margin-left: 15%;
+       align-items: baseline;
     }
 }
 

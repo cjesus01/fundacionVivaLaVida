@@ -26,12 +26,16 @@ botonCerrar.addEventListener("click", function(){
 comprobarSesion();
 function comprobarSesion(){
     if(usuarioLogin!=null){
-        IngresarLi.style.display="none";
-        CerrarSesion.style.display="block";
+        IngresarLi.classList.add("ocultarElem");
+        CerrarSesion.classList.remove("ocultarElem");
+        CerrarSesion.classList.add("mostrarLi");
+        document.querySelector('.linkAdoptar').classList.remove("ocultarElem");
     }
     else{
-        IngresarLi.style.display="block";
-        CerrarSesion.style.display="none";
+        IngresarLi.classList.remove("ocultarElem");
+        CerrarSesion.classList.remove("mostrarLi");
+        CerrarSesion.classList.add("ocultarElem");
+        document.querySelector('.linkAdoptar').classList.add("ocultarElem");
     }
 }
 
