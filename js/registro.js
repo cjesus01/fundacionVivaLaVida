@@ -1,28 +1,35 @@
-let nombre=document.getElementById("nombre");
-let contrasena= document.getElementById("contrsenia");
+const URL="https://668466d156e7503d1ae02f14.mockapi.io/api/usuarios";
+
+let nombre=document.getElementById("usuario");
+let contrasena= document.getElementById("contrasenia");
 let email=document.getElementById("email");
 let telefono=document.getElementById("telefono");
-let botonConsulta=document.getElementById("botonConsulta");
+let boton_loggin=document.querySelector(".boton_loggin");
 let parrafoAvisoConsulta=document.querySelector(".parrafoAvisoConsulta");
 let parrafoNombre=document.getElementById("textoNombre");
-let parrafoContrasena=document.getElementById("textoContrasena");
+let parrafoContrasena=document.querySelector(".textoContrasena");
 let parrafoEmail=document.getElementById("textoEmail");
 let parrafoTelefono=document.getElementById("textoTelefono");
 
 const expresionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const expresionTel = /^[0-9]{4}-[0-9]{6}$/;
+const expresionContrasena=/^(?=.*\d)[A-Za-z\d]{8,}$/;
 
 
-
-botonConsulta.addEventListener("click", ()=>{
-    if(nombre.value=="" || apellido.value=="" || email=="" || telefono==""){
+boton_loggin.addEventListener("click", ()=>{
+    if(nombre.value=="" || contrasena.value=="" || email=="" || telefono==""){
         parrafoAvisoConsulta.innerHTML="";
         parrafoAvisoConsulta.innerHTML="Necesita completar todos los campos";
     }
     else{
        if(comprobarTodosLosCamposValidos()){
-        registro=true;
-            window.location.href='ingresar.html';
+            let usuario={
+                nombre_usuario: nombre.value,
+                contrasena:contrasena.value,
+                Email:email.value,
+                telefono:telefono.value
+            }
+            crearUsuario(usuario);
        }
        else{
         parrafoAvisoConsulta.innerHTML="";
@@ -31,10 +38,10 @@ botonConsulta.addEventListener("click", ()=>{
     }
 })
 
-contrasena.addEventListener("input", ()=>{
+contrasena.addEventListener("change", ()=>{
     contrasena.classList.remove("valorValido");
     contrasena.classList.remove("valorInvalido");
-    if(contrasena!=""){
+    if(expresionContrasena.test(contrasena.value)){
         parrafoContrasena.innerHTML="";
         contrasena.classList.add("valorValido");
     }
@@ -43,16 +50,11 @@ contrasena.addEventListener("input", ()=>{
         parrafoContrasena.innerHTML="La contraseña no es válida.";
     }
 })
-nombre.addEventListener("input", ()=>{
+nombre.addEventListener("change", ()=>{
     nombre.classList.remove("valorValido");
     nombre.classList.remove("valorInvalido");
-    if(contrasena.value!=""){
-        parrafoNombre.innerHTML="";
-        nombre.classList.add("valorValido");
-    }
-    else{
-        nombre.classList.add("valorInvalido");
-        parrafoNombre.innerHTML="El nombre no es válido.";
+    if(nombre.value!=""){
+        NoExisteUsuario();
     }
 })
 
@@ -89,4 +91,47 @@ function comprobarTodosLosCamposValidos(){
             return true;
         }
         return false;
+}
+
+async function NoExisteUsuario(){
+    let encuentra=false;
+    try{
+        let res= await fetch(URL);
+        let json= await res.json();
+        tamañoJSON=json.length;
+        for(let persona of json){
+            console.log(persona.nombre_usuario==nombre.value);
+            if(persona.nombre_usuario==nombre.value){
+               encuentra=true;
+            }
+        }
+        if(!encuentra){
+            parrafoNombre.innerHTML="";
+            nombre.classList.add("valorValido");
+        }
+        else{
+            nombre.classList.add("valorInvalido");
+            parrafoNombre.innerHTML="El nombre de ese usuario ya existe.";
+        }
+    }
+    catch{
+        alert("Ha surgido un error con el servidor, intentelo más tarde.");
+    }
+}
+
+async function crearUsuario(usuario){
+    try{
+        let res = await fetch(URL, {
+            "method": "POST",
+            "headers": { "Content-type": "application/json" },
+            "body": JSON.stringify(usuario)
+        });
+        if(res.status==201){
+            console.log("creado");
+            window.location.href='ingresar.html';
+        }
+    }
+    catch(error){
+       alert("Se ha generado un error, intentelo más tarde.");
+    };
 }

@@ -3,6 +3,7 @@
 
 body {
     background-color: #EAFFF6;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -13,6 +14,16 @@ nav{
     margin: 3%;
 }
 
+.logoRedes{
+    margin-top: 3%;
+    width: 20%;
+    text-align: center;
+}
+.face, .insta{
+    width: 40%;
+    height: auto;
+    margin-right: 5%;
+}
 
 article{
     padding: 0% 5%;
@@ -27,8 +38,8 @@ article{
     width: 12rem;
     height: 0px;
     position: absolute;
-    left: 48%;
-    top: 7%;
+    right: 0;
+    top: 6%;
 }
 .ocultarElem{
     display: none;
@@ -79,6 +90,7 @@ li:hover{
 
 h2, h1, h3{
     font-family: 'Merriweather';
+    width:90%;
 }
 h2{
     font-size: 180%;
@@ -112,6 +124,7 @@ p{
 footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background-color: #54BFA1;
     margin-top: 2%;
 }
@@ -147,12 +160,6 @@ a{
     color: white;
 }
 
-.face, .insta{
-    width: 10%;
-    height: 10%;
-    margin-right: 5%;
-    margin-top: 3%;
-}
 
 footer p{
     margin-top: 3%;
@@ -189,7 +196,7 @@ section .rocky, section .tina{
 }
 
 .perros_adopciones h2, .perros_adopciones p, .perros_adopciones button{ 
-    margin: 0 0 7% 3%;
+    margin: 0 0 3% 3%;
 }
 .perros_adopciones h2{
     padding-top: 3%;
@@ -220,57 +227,28 @@ section .rocky, section .tina{
     color: white;
 }
 
-@media(width<=350px){
-    .contenedorMenuLista{
-        left: 43%;
-        top: 5%;
-    }
-}
-@media(width>=390px){
-    .contenedorMenuLista{
-        left: 52%;
-        top: 6%;
-    }
-}
-@media(width>=450px){
-    .contenedorMenuLista{
-        left: 56%;
-        top: 8%;
-    }
-}
-@media(width>=510px){
-    .contenedorMenuLista{
-        left: 63%;
-        top: 8%;
-    }
-}
-@media(width>=600px){
-    .contenedorMenuLista{
-        left: 68%;
-        top: 8%;
-    }
-}
-@media(width>=700px){
+
+
+
+@media only screen and (width>=700px){
     .formas_ayudar p, p{
         font-size: 22px;
     }
     .formas_ayudar button{
         padding: 10px 20%;
     }
-    .contenedorMenuLista{
-        left: 72%;
-        top: 6%;
-    }
     .negro img{
         width: 25%;
     }
+    .contenedorMenuLista{
+        top: 5%;
+    }
     footer{
-        justify-content: space-around;
         align-items: center;
     }
     .face, .insta {
-        width: 6%;
-        height: 6%;
+        width: 30%;
+        height: auto;
         margin-bottom: 2%;
     }
     h3{
@@ -285,7 +263,8 @@ section .rocky, section .tina{
     }
 
 }
-@media (width >= 800px){
+
+@media only screen and (width >= 800px){
     nav{
         background-color: #54BFA1;
         display: flex;

@@ -12,7 +12,7 @@ function asignarEvento(){
                 padre.insertBefore(p, boton.nextElementSibling);
                 p.classList.add("parrafoNecesitaIngresar");
                 p.style.marginTop="14px";
-                p.innerHTML="Necesita registrarse para llevar realizar esa acción.";
+                p.innerHTML="Necesita registrarse para llevar acabo esta acción.";
             }
             else if(usuario!=null){
                 window.location.href="contacto.html";

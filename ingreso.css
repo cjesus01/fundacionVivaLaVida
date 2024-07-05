@@ -28,6 +28,7 @@ form{
 
 .ingreso h1{
     text-align: center;
+    width: auto;
     margin-top: 2%;
     margin-left: 0%;
 }

@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "style.css">
-    <link rel="stylesheet" href = "form.css">
-    <link rel="stylesheet" href = "ingreso.css">   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="ingreso.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Fundacion Viva La Vida - Ingresar</title>
 </head>
+
 <body>
     <main>
-    <nav>
-        <img src = "Imagenes/Logo fundacion.jpeg" class = "logo" alt = "Logo de la institucion"> 
-        <div class="contenedorMenuBotones">
-            <button class="botonAbrirMenu"><img src="Imagenes/menuLogos.png" alt="menu"></button>
-            <button class="botonCerrarMenu ocultarElem"><img src="Imagenes/menuLogosX.png" alt=""></button>
+        <nav>
+            <img src="Imagenes/Logo fundacion.jpeg" class="logo" alt="Logo de la institucion">
+            <div class="contenedorMenuBotones">
+                <button class="botonAbrirMenu"><img src="Imagenes/menuLogos.png" alt="menu"></button>
+                <button class="botonCerrarMenu ocultarElem"><img src="Imagenes/menuLogosX.png" alt=""></button>
+            </div>
+            <div class="contenedorMenuLista">
+                <ul>
+                    <li><a href="index.html">¿Quienes somos?</a></li>
+                    <li><a href="donaciones.html">Donación</a></li>
+                    <li><a href="adopcion.html">Adoptar</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="Ingresar"><a href="ingresar.html">Ingresar</a></li>
+                    <li class="cerrarSesion noMostrar">Cerrar sesión</li>
+                </ul>
+            </div>
+        </nav>
+        <p id="textoAviso"></p>
+        <div class="ingreso">
+            <h1>Ingresar</h1>
+            <form method="get">
+                <div class="ingresar_usuario">
+                    <label for="ingresar_usuario">Usuario</label>
+                    <p id="textoUsuario"></p>
+                    <input type="text" name="ingresar_usuario" id="ingresar_usuario" placeholder="Ingrese su usuario">
+                </div>
+                <div class="ingresar_contrasenia">
+                    <label for="ingresar_contrasenia">Contraseña</label>
+                    <p id="textoContrasena"></p>
+                    <input type="password" name="ingresar_contrasenia" id="ingresar_contrasenia"
+                        placeholder="Ingresa su contraseña">
+                </div>
+                <div class="envio">
+                    <button type="button" id="botonIngresar">Ingresar</button>
+                    <a href="loggin.html"> Crear Cuenta</a>
+                </div>
+            </form>
         </div>
-        <div class="contenedorMenuLista">
-            <ul>
-                <li><a href="index.html">¿Quienes somos?</a></li>
-                <li><a href="donaciones.html">Donación</a></li>
-                <li><a href="adopcion.html">Adoptar</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li class="Ingresar"><a href="ingresar.html">Ingresar</a></li>
-                <li class="cerrarSesion noMostrar">Cerrar sesión</li>
-            </ul>
-        </div>
-    </nav>  
-    <p id="textoAviso"></p>
-    <div class = "ingreso">
-        <h1>Ingresar</h1>
-        <form method="get">
-            <div class = "ingresar_usuario">
-                <label for = "ingresar_usuario">Usuario</label>
-                <p id="textoUsuario"></p>
-                <input type = "text" name = "ingresar_usuario" id = "ingresar_usuario" placeholder = "Ingrese su usuario">
-            </div>
-            <div class = "ingresar_contrasenia">
-                <label for = "ingresar_contrasenia">Contraseña</label>
-                <p id="textoContrasena"></p>
-                <input type = "password" name = "ingresar_contrasenia" id = "ingresar_contrasenia" placeholder = "Ingresa su contraseña">
-            </div>
-            <div class = "envio">
-                <button type = "button" id="botonIngresar">Ingresar</button>
-                <a href = "loggin.html"> Crear Cuenta</a>
-            </div>
-        </form>
-    </div>
     </main>
-    <footer class = "inicio_footer">
-        <p class = "copi">&copy; 2016 Fundación Viva la Vida por el Bienestar Animal</p>
-       <img src = "Imagenes/Logo facebook.jpeg" alt = "Logo de Facebook" class = "face">
-        <img src = "Imagenes/Logo Instagram.jpeg" alt = "Logo de Instragram" class = "insta">
-        <a href = "https://www.instagram.com/fundacionvivalavida.argentina/" class="linkInstagramFooter">@fundacionvivalavida.argentina</a>
+    <footer class="inicio_footer">
+        <p class="copi">&copy; 2016 Fundación Viva la Vida por el Bienestar Animal</p>
+        <img src="Imagenes/Logo facebook.jpeg" alt="Logo de Facebook" class="face">
+        <img src="Imagenes/Logo Instagram.jpeg" alt="Logo de Instragram" class="insta">
+        <a href="https://www.instagram.com/fundacionvivalavida.argentina/"
+            class="linkInstagramFooter">@fundacionvivalavida.argentina</a>
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/ingresar.js"></script>
 </body>
+
 </html>
