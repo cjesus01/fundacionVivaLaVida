@@ -287,7 +287,7 @@ section .rocky, section .tina{
     }
 }
 
-@media only screen and (width>=500px){
+@media only screen and (width>=600px){
     .face, .insta{
         width: 60%;
         height: auto;
@@ -381,7 +381,7 @@ section .rocky, section .tina{
         text-align: center;
     }
 
-    a, .mostrarLi{
+    ul li a, .mostrarLi{
         white-space: nowrap;
         font-size: 130%;
     }
