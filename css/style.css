@@ -2,6 +2,7 @@ body {
     background-color: #EAFFF6;
     overflow-x: hidden;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 nav{
@@ -23,7 +24,9 @@ nav{
 article{
     padding: 0% 5%;
 }
-
+.textoEnNegrita{
+    font-weight:bolder;
+}
 .contenedorMenuBotones{
     height: 40px;
     position: relative;
@@ -104,17 +107,16 @@ h2{
 }
 h1{
     font-size: 200%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 p{
-    font-family: 'Roboto';
     text-align: left;
     font-size: 18px;
 }
 
 .formas_ayudar p{
     padding-right: 10%;
-    margin-top: 0.5%;
+    margin-top: 5%;
     margin-right: 0%;
 }
 .parrafoNecesitaIngresar{
@@ -127,6 +129,14 @@ p{
     margin-top: 5%;
 }
 
+.colocar_icono{
+    display: flex;
+}
+
+ .icono{
+    width: 70px;
+    margin: 0 0 0 0;
+ }
 
 footer{
     display: flex;
@@ -191,7 +201,6 @@ footer p{
 
 .texto_donacion p{
     text-align: left;
-    font-family: 'Roboto';
     font-size: 120%;
     margin-right: 10%;
     margin-left: 8%;
@@ -320,7 +329,7 @@ section .rocky, section .tina{
     }
     h1{
         font-size: 250%;
-        margin-left: 5%;
+        margin-left: 3%;
     }
     section .chiqui, section .milton, section .luna, section .clarita, section .freddy, section .fido,
     section .ginger, section .malbec, section .marley, section .melba, section .muma, section .nala, section .negro,
@@ -344,7 +353,6 @@ section .rocky, section .tina{
         justify-content: space-between;
     }
 
-
     h1{
         margin-top: 4%;
     }
@@ -363,7 +371,7 @@ section .rocky, section .tina{
 
     .contenedorMenuLista{
         height: 100%;
-        width: 75%;
+        width: 45%;
         position: relative;
     }
     
@@ -399,11 +407,18 @@ section .rocky, section .tina{
     
     .formas_ayudar p, p{
         font-size: 18px;
-        font-family: 'Roboto';
         text-align: left;
         padding-right: 10%;
         margin-top: 0.5%;
         margin-right: 0%;
+    }
+
+    .formas_ayudar .donar_inicio p, .formas_ayudar .voluntario_inicio p, .formas_ayudar .hogar_inicio p, .formas_ayudar .padrino_inicio p{
+        margin-top: 5%;
+    }
+
+    .icono{
+        width: 60px;
     }
 
     .formas_ayudar .donar_inicio p{
@@ -425,7 +440,7 @@ section .rocky, section .tina{
 
     h2{
         font-size: 250%;
-        margin-left: 5%;
+        margin-left: 3%;
     }
     
     h3{
@@ -446,7 +461,7 @@ section .rocky, section .tina{
     }
     
     .donar_inicio button, .voluntario_inicio button, .hogar_inicio button,  .padrino_inicio button{
-        margin-left: 5%;
+        margin: 0 10% 0 3% ;
         background-color: #326254;
         padding: 7px 20% 7px 20%;
         border-radius: 5px;
@@ -469,7 +484,7 @@ section .rocky, section .tina{
     
     /*donacion*/
     .titulo_donacion{
-        margin-left: 5%;
+        margin-left: 3%;
         margin-top: 4%;
         font-family: 'merriweather';
         font-size: 250%;
@@ -483,7 +498,6 @@ section .rocky, section .tina{
     
     .texto_donacion p{
         text-align: left;
-        font-family: 'Roboto';
         font-size: 150%;
         margin-right: 10%;
         margin-left: 5%;
@@ -510,7 +524,7 @@ section .rocky, section .tina{
     .ayudanos h2{
         font-size: 200%;
         font-family: 'Merriweather';
-        margin-left: 5%;
+        margin-left: 3%;
     }
     
     .banco h3{

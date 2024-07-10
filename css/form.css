@@ -32,11 +32,12 @@ input:focus, textarea:focus{
 }
 
 #textoNombre, #textoApellido, #textoEmail, #textoTelefono, #textoAsunto, .textoContrasena, small{
-    margin: 0;
-    margin-left: 13%;
-    margin-bottom: 1%;
     margin: 0 0 1% 16%;
     font-size: 15px;
+}
+
+small{
+    margin-bottom: 0%;
 }
 
 label{
@@ -110,12 +111,12 @@ button{
         margin-top: 3%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 2%;
+        margin-bottom: 0%;
     }
     
     label{
         font-size: 150%;
-        margin-bottom: 1%;
+        margin-bottom: 0%;
         margin-left: 15%;
     }
     

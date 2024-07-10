@@ -38,6 +38,7 @@ async function obtenerPersona(nombre, contrasena){
                     contrasenaIngresado.classList.add("valorValido");
                     localStorage.setItem('usuario', JSON.stringify(persona));
                     document.querySelector(".linkAdoptar").classList.remove("ocultarElem");
+                    location.href="index.html";
                 }
                 else{
                     contrasenaIngresado.classList.add("valorInvalido");
@@ -49,9 +50,6 @@ async function obtenerPersona(nombre, contrasena){
             textoUsuario.innerHTML="Se encuentra incorrecto el nombre del usuario.";
             nombreIngresado.classList.add("valorInvalido");
             contrasena="";
-        }
-        else{
-            location.href="index.html";
         }
     }
     catch{
